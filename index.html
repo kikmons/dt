@@ -1,0 +1,10 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Opening DEVONthink…</title>
+<script>
+  const id = (location.search || location.hash).slice(1);
+  if (/^[0-9A-F-]{36}$/i.test(id)) {
+    location.href = "x-devonthink-item://" + id;
+  }
+</script>
+<p>Opening in DEVONthink…</p>
